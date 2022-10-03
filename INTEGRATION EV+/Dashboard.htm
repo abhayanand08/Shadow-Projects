@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/svg" href="logo-apple.svg" sizes="32*32">
+    <link rel="stylesheet" type="text/css" href="integrateddashboard.css">
+    <title>Workshop - Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="logo-apple"></ion-icon></span>
+                        <span class="title">Workshop</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#main">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Configuration.html">
+                        <span class="icon"><ion-icon name="qr-code-outline"></ion-icon></span>
+                        <span class="title">Configuration</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Customers.htm">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Messages.html">
+                        <span class="icon"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></span>
+                        <span class="title">Messages</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Help.htm">
+                        <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Settings.htm">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Projects.html">
+                        <span class="icon"><ion-icon name="folder-outline"></ion-icon></span>
+                        <span class="title">Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Password.html">
+                        <span class="icon"><ion-icon name="finger-print-outline"></ion-icon></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Log Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main" id="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <div class="search">
+                    <label>
+                        <input type="search" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="user.jpg">
+                </div>
+            </div>
+            <div class="cardbox">
+                <div class="card">
+                    <div>
+                    <div class="numbers">17,937</div>
+                    <div class="cardname">Weekly Visits</div>
+                </div>
+                <div class="iconbx">
+                    <ion-icon name="eye-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                <div class="numbers">106</div>
+                <div class="cardname">Projects</div>
+            </div>
+            <div class="iconbx">
+                <ion-icon name="file-tray-stacked-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+            <div class="numbers">8,962</div>
+            <div class="cardname">Clients</div>
+        </div>
+        <div class="iconbx">
+            <ion-icon name="person-add-outline"></ion-icon>
+        </div>
+    </div>
+    <div class="card">
+        <div>
+        <div class="numbers">₹35,874</div>
+        <div class="cardname">Weekly Income</div>
+    </div>
+    <div class="iconbx">
+        <ion-icon name="cash-outline"></ion-icon>
+    </div>
+</div>
+        </div>
+
+        <div class="graphbox">
+            <div class="box">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="box">
+                <canvas id="earningmth"></canvas>
+            </div>
+        </div>
+        <div class="graphboxa">
+            <div class="boxa">
+                <canvas id="earningmthinc"></canvas>
+            </div>
+            <div class="boxa">
+                <canvas id="Clientsadd"></canvas>
+            </div>
+        </div>
+        
+        <div class="details">
+            <div class="recentorders">
+                <div class="cardheader">
+                   <h2>Recent Activities</h2> 
+                   <a href="Customers.htm" class="btn">View All</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Project</td>
+                            <td>Activity</td>
+                            <td>Status</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ashish Anand</td>
+                            <td>#37</td>
+                            <td>Upload</td>
+                            <td><span class="status delievered">Inboxed</span></td> 
+                        </tr>
+                        <tr>
+                            <td>Krishna Hagori</td>
+                            <td>#106</td>
+                            <td>Viewed</td>
+                            <td><span class="status delievered">Inboxed</span></td> 
+                        </tr>
+                        <tr>
+                            <td>Abhay Anand</td>
+                            <td>#24</td>
+                            <td>Subscribe</td>
+                            <td><span class="status paid">Finance</span></td> 
+                        </tr>
+                        <tr>
+                            <td>Ankita Singh Rajput</td>
+                            <td>#07</td>
+                            <td>Viewed</td>
+                            <td><span class="status delievered">Inboxed</span></td> 
+                        </tr>
+                        <tr>
+                            <td>Ajibnav Kumari</td>
+                            <td>#49</td>
+                            <td>Viewed</td>
+                            <td><span class="status not">Blocked</span></td> 
+                        </tr>
+                        <tr>
+                            <td>Chicken Legpiece</td>
+                            <td>#37</td>
+                            <td>Subscribe</td>
+                            <td><span class="status not">Blocked</span></td> 
+                        </tr>
+                        <tr>
+                            <td>TikTok Joker</td>
+                            <td>#37</td>
+                            <td>Subscribe</td>
+                            <td><span class="status not">Blocked</span></td> 
+                        </tr>
+                        <tr>
+                            <td>Dhano Mandola</td>
+                            <td>#37</td>
+                            <td>Subscribe</td>
+                            <td><span class="status delievered">Inboxed</span></td> 
+                        </tr>
+                        <tr>
+                            <td>KRK</td>
+                            <td>#37</td>
+                            <td>Upload</td>
+                            <td><span class="status not">Blocked</span></td> 
+                        </tr>
+                        <tr>
+                            <td>Nischay Malhan</td>
+                            <td>#52</td>
+                            <td>Viewed</td>
+                            <td><span class="status delievered">Inboxed</span></td> 
+                        </tr>
+                        <tr>
+                            <td>Gi JoeBen</td>
+                            <td>#99</td>
+                            <td>Upload</td>
+                            <td><span class="status paid">Finance</span></td> 
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="recentcustomers">
+                <div class="cardheader">
+                    <h2>Recent Clients</h2> 
+                 </div>
+                 <table>
+                     <tr>
+                         <td width="60px"><div class="imgbx"><img src="img1.jpg"></div></td>
+                         <td><h4>Tony Stark<br><span>USA</span></h4></td>
+                     </tr>
+                     <tr>
+                        <td width="60px"><div class="imgbx"><img src="img2.jpg"></div></td>
+                        <td><h4>Kang The Conqueror<br><span>Canada</span></h4></td>
+                    </tr>
+                    <tr>
+                        <td width="60px"><div class="imgbx"><img src="img3.jpg"></div></td>
+                        <td><h4>Natasha Ramanoff<br><span>Russia</span></h4></td>
+                    </tr>
+                    <tr>
+                        <td width="60px"><div class="imgbx"><img src="img4.jpg"></div></td>
+                        <td><h4>Wanda Maximoff<br><span>Europe</span></h4></td>
+                    </tr>
+                    <tr>
+                        <td width="60px"><div class="imgbx"><img src="img5.jpg"></div></td>
+                        <td><h4>Minnal Murali<br><span>India</span></h4></td>
+                    </tr>
+                    <tr>
+                        <td width="60px"><div class="imgbx"><img src="img6.jpg"></div></td>
+                        <td><h4>Loki Laufeyson<br><span>Norway</span></h4></td>
+                    </tr>
+                    <tr>
+                        <td width="60px"><div class="imgbx"><img src="user7.png"></div></td>
+                        <td><h4>Shadow<br><span>India</span></h4></td>
+                    </tr>
+                    <tr>
+                        <td width="60px"><div class="imgbx"><img src="img8.jpg"></div></td>
+                        <td><h4>Dr Strange<br><span>USA</span></h4></td>
+                    </tr>
+                 </table>
+                </div>
+
+        </div>
+
+        <div class="graphboxd">
+            <div class="boxd">
+                <canvas id="topfivecontri"></canvas>
+            </div>
+            <div class="boxd">
+                <canvas id="visitinweeks"></canvas>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
+    
+<script>
+let toggle = document.querySelector('.toggle');
+let navigation = document.querySelector('.navigation');
+let main = document.querySelector('.main');
+
+toggle.onclick= function(){ 
+    navigation.classList.toggle('active'); 
+    main.classList.toggle('active');
+}
+</script>
+
+
+<script>
+    let list = document.querySelectorAll('.navigation li');
+function activeLink(){
+    list.forEach((item) =>
+    item.classList.remove('hovered'));
+    this.classList.add('hovered')
+}
+list.forEach((item) =>
+item.addEventListener('mouseover',activeLink));
+</script>
+
+<script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const earning = document.getElementById('earningmth').getContext('2d');
+    const myChart = new Chart(ctx, {
+        type: 'polarArea',
+        data: {
+            labels: ['SMTP', 'Data Management', 'Others'],
+            datasets: [{
+                label: 'Earning Comparison in All Fields',
+                data: [11121, 5022, 19731],
+                backgroundColor: [
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(153, 102, 255, 1)'
+                ],
+               
+            }]
+        },
+        options: {
+           responsive: true,
+
+           plugins: {
+            title: {
+                display: true,
+                text: 'Earning Comparison (in ₹)'
+            }
+        }
+        }
+    });
+
+
+    
+    const mycrt = new Chart(earning, {
+    type: 'bar',
+    data: {
+        labels: ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        datasets: [{
+            label: 'Earnings on Monthly Works (label assigning half year comparison)',
+            data: [13700, 11053, 16750, 14008, 7060, 8000, 9500, 4000, 13432, 5000, 17937, 5200],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+         
+        }]
+    },
+    options: {
+        responsive: true,
+
+        plugins: {
+            title: {
+                display: true,
+                text: 'Weekly Payment Average on Per Month'
+            }
+        }
+    }
+});
+    </script>
+    <script>
+        const earninginc = document.getElementById('earningmthinc').getContext('2d');
+        const clientadd = document.getElementById('Clientsadd').getContext('2d');
+        const myline = new Chart(earninginc, {
+    type: 'line',
+    data: {
+        labels: ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        datasets: [{
+            label: 'Increase Rates in Earnings (in %) (label assigning half year comparison)',
+            data: [45, 75, 55, 83, 67, 62, 51, 75, 50, 49, 97, 91],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+         
+        }]
+    },
+    options: {
+        responsive: true,
+
+        plugins: {
+            title: {
+                display: true,
+                text: 'Up-Down Rate Chart in Earnings'
+            }
+        }
+    }
+});
+
+const myclients = new Chart(clientadd, {
+    type: 'bar',
+    data: {
+        labels: ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        datasets: [{
+            label: 'Clients Addition (label assigning half year comparison)',
+            data: [200, 190, 500, 300, 40, 75, 50, 400, 300, 250, 500, 200],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+         
+        }]
+    },
+    options: {
+        responsive: true,
+        indexAxis: 'y',
+
+        plugins: {
+            title: {
+                display: true,
+                text: 'Client Subscriptions'
+            }
+        }
+    }
+});
+    </script>
+    <script>
+    const customers = document.getElementById('visitinweeks').getContext('2d');
+    const topfive = document.getElementById('topfivecontri').getContext('2d');
+    const myfive = new Chart(topfive, {
+    type: 'pie',
+    data: {
+        labels: ['IEV Programs', 'Special Services', 'SMTP', 'SubTech Services', 'Data Management'],
+        datasets: [{
+            label: 'Visits by Developer Factory Projects (in %)',
+            data: [23, 39, 14, 7, 17],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+            ],
+         
+        }]
+    },
+    options: {
+        responsive: true,
+
+        plugins: {
+            title: {
+                display: true,
+                text: 'Developer Factory Status (in %)'
+            }
+        }
+    }
+});
+
+        const myvisit = new Chart(customers, {
+    type: 'line',
+    data: {
+        labels: ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        datasets: [{
+              fill: {
+                target: 'origin',
+                above: 'rgba(54, 162, 235, 1)',   // Area will be red above the origin
+                below: 'rgb(0, 255, 0)'    // And blue below the origin
+              },
+            label: 'week 1',
+            data: [45, 75, -55, 83, -67, -22, -51, 75, -50, 49, 167, 91],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+        },
+            {
+                fill: {
+                target: 'origin',
+                above: 'rgba(255, 0, 0, 1)',   // Area will be red above the origin
+                below: 'rgba(255, 206, 86, 1)'    // And blue below the origin
+              },
+            type: 'line',
+            label: 'Week 2',
+            data: [-45, 95, 45, 93, 47, -42, 51, 75, -50, 44, 179, 34],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            },
+            {
+                fill: {
+                target: 'origin',
+                above: 'rgba(153, 102, 255, 1)',   // Area will be red above the origin
+                below: 'rgba(255, 159, 64, 1)'    // And blue below the origin
+              },
+            type: 'line',
+            label: 'Week 3',
+            data: [21, 95, 40, 82, 61, 72, -51, -75, -50, -44, 199, 64],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+        },
+            {
+                fill: {
+                target: 'origin',
+                above: 'rgba(255, 99, 132, 1)',   // Area will be red above the origin
+                below: 'rgba(75, 192, 192, 1)'    // And blue below the origin
+              },
+            type: 'line',
+            label: 'Week 4',
+            data: [31, 85, 169, 90, 101, 77, 51, 75, 120, 94, 199, 84],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+         
+        }]
+    },
+    options: {
+        responsive: true,
+
+        plugins: {
+            title: {
+                display: true,
+                text: 'Compared Weekly Visits Average Per Month (in x/200)'
+            }
+        }
+    }
+});
+    </script>
+</body>
+</html>

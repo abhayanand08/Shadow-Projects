@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {box-sizing: border-box}
+
+
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 5px;
+  background: url('');
+  padding: 20px 0 30px 0;
+}
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+
+.col .button{
+  width: 100%;
+  height: 370px;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.80;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+.col .button:hover{
+  opacity: 1;
+  transition: 3s;
+}
+
+.iev {
+  background-color: #9011e4;
+  color: white;
+}
+
+.guest {
+  background-color: #0f93ff;
+  color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #f56cbc;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #4dbcfc;
+}
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+  font-family: sans-serif;
+}
+
+.cola {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+  font-family: sans-serif;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid rgb(61, 161, 255);
+  height: 771px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #bde3ec;
+  border: 1px solid rgb(61, 161, 255);
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+.bottom-container{
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.bottom-container .col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+
+  background-color: rgb(0, 0, 0);
+}
+
+.bottom-container .col .btn {
+  color: rgb(255, 217, 0);
+}
+
+.colin {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+  background-color: rgb(255, 0, 149);
+}
+
+
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}

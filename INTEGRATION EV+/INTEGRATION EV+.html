@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="integrationev.css">
+    <link rel="shortcut icon" type="img/png" href="logo_free-file.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>IntegrationEV+ - Your Interface Partner</title>
+</head>
+<body class="sec">
+      <div id="menu" class="animate__animated animate__fadeInDown">
+        <div class="leftmenu">
+         <img src="C:\Users\abhay\OneDrive\Desktop\Shadow Projects\INTEGRATION EV+\thumbnail (17).png" alt="Iex" height="40" width="">
+        </div>
+        <div class="rightmenu">
+            <ul>
+             <a href="#">
+                 <li id="home">Home</li> 
+             </a> 
+             <a href="ievonfigurationguide.html">
+                <li>Your Guide</li>
+            </a> 
+            <a href="ievprojectservices.htm">
+                <li>Our Services</li>
+            </a>
+            <a href="ievconfigurationmarket.htm">
+                <li>Visit Online Market</li>
+            </a> 
+            <a href="ievadditionalprojectservices.htm">
+                <li>Join MAGNET</li>
+            </a> 
+            <a href="ievprojectservices.htm">
+                <li>Visit BootCamp</li>
+            </a> 
+            <a href="yourievprofile.htm">
+                <li>Profile</li>
+            </a> 
+            </ul>
+        </div>
+      </div>
+      
+      <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="slide">Integrated Environment</h2>
+        <a href="Dashboard.htm" id="btn">Go to Workshop</a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="intro" id="intro">
+        <h2>What is IntegrationEV+?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore cum eum necessitatibus quaerat quas voluptas corporis numquam, facilis ipsam labore asperiores fuga, voluptate iure dolorum iste in ab minima. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit fugit a magni ab dolore ducimus incidunt. Voluptate earum voluptatum maiores esse explicabo minima nemo sit repellendus. Sunt totam ab veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem reprehenderit illum cupiditate. Repellat nobis commodi et maxime harum tempore tempora numquam. Asperiores modi ex animi sit voluptatibus adipisci impedit sapiente.<br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus sit aut aliquam cum atque commodi tempora, esse quo fugiat itaque voluptatem nemo eligendi consectetur, illo, quasi id a recusandae doloremque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus cum obcaecati excepturi ipsum accusantium consectetur blanditiis repudiandae cupiditate mollitia facere tempore earum dolor, ullam id sed ipsam delectus explicabo eaque. <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consectetur temporibus facilis eum dolore consequatur molestias? Culpa odio aperiam animi quidem unde quam, quisquam laboriosam delectus nesciunt laborum earum quae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eaque velit distinctio nobis quidem, sint reiciendis esse ad nesciunt corrupti! Rerum blanditiis asperiores, excepturi officia dolorum fugit soluta doloribus explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam earum ratione molestiae facilis sequi. Iusto, necessitatibus numquam. Fugiat quisquam distinctio excepturi suscipit aliquid adipisci fuga perspiciatis quasi temporibus, delectus rem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, necessitatibus accusamus qui fugit amet maiores optio deserunt dignissimos unde est! Similique modi accusantium sunt natus neque nulla eveniet, itaque nostrum!</p>
+        <br><br>
+        <h2>Why to prefer IEV+?</h2>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ipsa ab omnis quaerat amet voluptate quas laboriosam officiis error at harum nihil eum. Nulla corrupti porro neque! Delectus, maiores ab? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem accusamus iusto voluptatem, voluptates error, ex consequatur deleniti perferendis cum minima numquam! Autem in optio libero dicta suscipit voluptas quae sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, recusandae nulla rem possimus impedit ipsa aspernatur iure hic consequuntur repellat consectetur odio distinctio asperiores soluta! Nam suscipit consequuntur sunt ratione?<br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque delectus nulla maxime culpa quod minima similique impedit, natus quisquam laboriosam minus assumenda, odio, ad nihil quaerat? Animi, eaque. Quidem, ratione? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt at nulla eligendi atque, eum esse quo, consectetur repudiandae modi maiores commodi expedita quia totam nemo voluptates quis cum facilis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ea eos. Unde, optio? Cumque nisi, ex fuga aperiam ipsa nam debitis perspiciatis, rerum iusto perferendis soluta odio obcaecati amet voluptate?</P>
+    <br><br>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let slide = document.getElementById('slide');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let menu = document.getElementById('menu');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            slide.style.marginRight = value * 4 + 'px';
+            slide.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.6 + 'px';
+            menu.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+"users": [
+{
+"id": 1,
+"name": "John", 
+"location": "india",
+"phone" "1234567890",
+"courses": [
+"Java",
+ "Selenium"
+]
+},
+{
+"id": 2,
+"name": "Johnny", 
+"location": "iran",
+"phone" "878912345",
+"courses": [
+"python",
+ "c++"
+]
+},

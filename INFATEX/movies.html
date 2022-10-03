@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="img/png" href="shadowas.png" size="32*32">
+    <link rel="stylesheet" type="text/css" href="movies.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <title>Movies</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="movies.png"></a>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <div class="search">
+            <input type="search" placeholder="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+<div class="banner">
+    <img src="bg.jpg" class="bg">
+    <div class="content">
+        <img src="name.png" class="movietitle">
+        <h4>
+            <span>2020</span>
+            <span><i>12+</i></span>
+            <span>1h 55min</span>
+            <span>Action</span>
+        </h4>
+        <p>
+            A young Chinese maiden disguises herself as a male warrior in order to save her father.
+        </p>
+        <div class="buttons">
+            <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Play</a>
+            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> My List</a>
+        </div>
+        </div>
+        <a class="play" onclick="toggleVideo()"><img src="play.png">Watch Teaser</a>
+    </div>
+
+    <div class="trailer">
+        <span>Disney's Mulan | Official Teaser | Disney+</span>
+        <video src="mulan-big-game-spot_h480p (1).mov" controls="true" title="Disney+ Mulan Teaser"></video>
+        <img src="close.png" alt="close trailer" class="close" onclick="toggleVideo()">
+    </div>
+
+
+    <script>
+        function toggleVideo(){
+            const trailer = document.querySelector('.trailer');
+            const video = document.querySelector('video');
+            trailer.classList.toggle('active')
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+
+</body>
+</html>

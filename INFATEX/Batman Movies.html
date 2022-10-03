@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="batmanss.css">
+    <link rel="shortcut icon" type="img/png" href="batman.png" size="32*32">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BATMAN</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="thebatman.png"></a>
+        <div class="toggle"><img src="toggle.png"></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+             <h2>Be a True <span>Bat</span> Knight</h2>
+             <p><b>The Batman (2022)</b> is an upcoming American superhero film based on the DC Comics character Batman.<br><b>Summary :</b></Summary> The Riddler plays a dangerous game of cat and mouse with Batman and Commissioner Gordon in Gotham City.</p>
+               <a class="play" onclick="toggleVideo()"><img src="C:\Users\abhay\OneDrive\Desktop\Shadow Projects\INFATEX\play.png">Watch Trailer</a>
+                   <ul class="sci">
+                   <li><a href="#"><img src="C:\Users\abhay\OneDrive\Desktop\Shadow Projects\INFATEX\facebook (1).png"></a></li>
+                   <li><a href="#"><img src="C:\Users\abhay\OneDrive\Desktop\Shadow Projects\INFATEX\instagram (1).png"></a></li>
+                   <li><a href="#"><img src="C:\Users\abhay\OneDrive\Desktop\Shadow Projects\INFATEX\twitter (1).png"></a></li>
+               </ul>
+            </div>
+    </div>
+
+    <div class="trailer">
+        <span>The Batman (2022) | Official Teaser | Prime Video</span>
+        <video src="The Batman.mp4" controls="true" title="The Batman (2022) Teaser"></video>
+        <img src="C:\Users\abhay\OneDrive\Desktop\Shadow Projects\INFATEX\close.png" alt="close trailer" class="close" onclick="toggleVideo()">
+    </div>
+
+
+    <script>
+        function toggleVideo(){
+            const trailer = document.querySelector('.trailer');
+            const video = document.querySelector('video');
+            trailer.classList.toggle('active')
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+</body>
+</html>

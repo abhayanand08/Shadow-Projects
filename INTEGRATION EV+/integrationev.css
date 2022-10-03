@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(#2b1055,#7597de);
+    overflow-x: hidden;
+}
+
+#menu{
+    color: white;
+    display: flex;
+    z-index: 1005;
+}
+.leftmenu{
+    padding: 22px 0px;
+    margin: 0px 30px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.6rem;
+}
+.rightmenu{
+    padding: 28px 0px;
+    margin-left: 180px;
+        text-align: right;
+        font-family: 'Kanit', sans-serif;
+    color: rgb(219, 219, 219);
+}
+.rightmenu ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+    font-size: 1.05rem;
+    font-weight:bold;
+    cursor: pointer;
+    padding: 5px 9px ;
+    font-family: 'Kanit', sans-serif;
+}
+.rightmenu ul a{
+    text-decoration: none;
+    color: rgb(178, 0, 248);
+    font-family: 'Kanit', sans-serif;
+}
+
+.rightmenu ul button{
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    color: rgb(178, 0, 248);
+    font-family: 'Kanit', sans-serif;
+}
+
+
+#home{
+    background-color: aliceblue;
+    padding: 5px 10px ;
+    border-radius: 25px;
+}
+
+.rightmenu ul li:hover{
+    background-color: aliceblue;
+    padding: 5px 9px ;
+    border-radius: 25px;
+    font-size: 1.05rem;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section::before{
+   content: '';
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 100px;
+   background: linear-gradient(to top,#300b3a,transparent);
+   z-index: 1000;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#moon{
+   mix-blend-mode: screen;
+}
+
+section img#mountains_front{
+    z-index: 10;
+}
+
+#slide{
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.4vw;
+    right: -800px;
+    z-index: 9;
+}
+
+#btn{
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #ffffff;
+    font-size: 1.5em;
+    color: #472b75;
+    display: inline-block;
+    z-index: 9;
+    transform: translateY(100px);
+}
+
+.intro{
+    position: relative;
+    padding: 100px;
+    background-color: #300b3a;
+}
+
+.intro h2{
+   font-size: 3.5em;
+   margin-bottom: 10px;
+   color: #fff;
+}
+
+.intro p{
+    font-size: 1em;
+    color: #fff;
+}
+
